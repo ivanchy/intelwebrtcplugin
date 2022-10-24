@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin xmlns:android="http://schemas.android.com/apk/res/android" id="owt.sample.conference" version="0.0.1"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <js-module name="intelwebrtc_plugin" src="www/intelwebrtcplugin.js">
+        <clobbers target="intelwebrtcplugin" />
+    </js-module>
+    <name>intelwebrtcplugin</name>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="intelwebrtcplugin">
+                <param name="android-package" value="owt.sample.conference.intelwebrtcplugin" />
+            </feature>
+        </config-file>
+
+
+        <lib-file src="src/android/libs/owt_base.aar" target-dir="libs/owt_base.aar"/>
+        <lib-file src="src/android/libs/owt_conference.aar" target-dir="libs/owt_conference.aar"/>
+
+        <!-- ??? manual add -->
+<!--        <lib-file src="src/android/libs/webrtc/arm64-v8a/libjingle_peerconnection_so.so" target-dir="src/main/jniLibs/arm64-v8a/libjingle_peerconnection_so.so"/>-->
+<!--        <lib-file src="src/android/libs/webrtc/armeabi-v7a/libjingle_peerconnection_so.so" target-dir="src/main/jniLibs/armeabi-v7a/libjingle_peerconnection_so.so"/>-->
+<!--        <lib-file src="src/android/libs/webrtc/x86/libjingle_peerconnection_so.so" target-dir="src/main/jniLibs/x86/libjingle_peerconnection_so.so"/>-->
+
+        <lib-file src="src/android/libs/webrtc/libwebrtc.jar"/>
+
+        <framework src="src/android/conf_build.gradle" custom="true" type="gradleReference"/>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <activity android:label="New Activity"
+                android:name="owt.sample.conference.ConfActivity"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:screenOrientation="landscape"
+                android:theme="@style/FullscreenTheme"
+            ></activity>
+        </config-file>
+
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/intelwebrtcplugin.java" target-dir="src/owt/sample/conference" />
+        <source-file src="src/android/ConfActivity.java" target-dir="src/owt/sample/conference" />
+        <source-file src="src/android/HttpUtils.java" target-dir="src/owt/sample/conference" />
+        <source-file src="src/android/LoginFragment.java" target-dir="src/owt/sample/conference" />
+        <source-file src="src/android/SettingsFragment.java" target-dir="src/owt/sample/conference" />
+        <source-file src="src/android/VideoFragment.java" target-dir="src/owt/sample/conference" />
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-feature android:name="android.hardware.camera"/>
+            <uses-feature android:name="android.hardware.camera.autofocus"/>
+            <uses-feature
+                android:glEsVersion="0x00020000"
+                android:required="true"/>
+
+            <uses-permission android:name="android.permission.CAMERA"/>
+            <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+            <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+            <uses-permission android:name="android.permission.INTERNET"/>
+            <uses-permission android:name="android.permission.WAKE_LOCK"/>
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+            <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+        </config-file>
+
+        <!--        <source-file src="src/android/utils" target-dir="src/sample/utils"/>-->
+        <source-file src="src/android/res/values/styles.xml" target-dir="res/values"/>
+        <source-file src="src/android/res/values/attrs.xml" target-dir="res/values"/>
+        <source-file src="src/android/res/values/colors.xml" target-dir="res/values"/>
+        <source-file src="src/android/res/values/strings.xml" target-dir="res/values"/>
+
+        <source-file src="src/android/utils/OwtFileVideoCapturer.java" target-dir="src/owt/sample/utils"/>
+        <source-file src="src/android/utils/OwtScreenCapturer.java" target-dir="src/owt/sample/utils"/>
+        <source-file src="src/android/utils/OwtVideoCapturer.java" target-dir="src/owt/sample/utils"/>
+
+        <source-file src="src/android/res/layout/conf_activity.xml" target-dir="res/layout"/>
+        <source-file src="src/android/res/layout/fragment_login.xml" target-dir="res/layout"/>
+        <source-file src="src/android/res/layout/fragment_settings.xml" target-dir="res/layout"/>
+        <source-file src="src/android/res/layout/fragment_video.xml" target-dir="res/layout"/>
+
+<!--        <source-file src="src/android/proguard-rules.pro" target-dir ="src/proguard-rules.pro"/>-->
+
+<!--    manual add "android.enableDexingArtifactTransform.desugaring=false" to gradle.properties -->
+
+    </platform>
+</plugin>
