@@ -44,6 +44,6 @@ dependencies {
     }
 
     //implementation project(':src:sample:utils')
-    compile(name:'owt_conference', ext:'aar')
-    compile(name:'owt_base', ext:'aar')
+    implementation(name:'owt_conference', ext:'aar')
+    implementation(name:'owt_base', ext:'aar')
 }
