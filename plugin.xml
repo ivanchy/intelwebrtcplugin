@@ -11,6 +11,38 @@
                 <param name="android-package" value="owt.sample.conference.intelwebrtcplugin" />
             </feature>
         </config-file>
+		
+		<config-file parent="/*" target="res/values/colors.xml">
+            <resources>
+				<color name="colorPrimary">#3f51b5</color>
+				<color name="colorPrimaryDark">#303F9F</color>
+				<color name="colorAccent">#ff4081</color>
+				<color name="black_overlay">#66000000</color>
+			</resources>
+        </config-file>
+		
+		<config-file parent="/*" target="res/values/strings.xml">
+            <resources>
+				<string name="owt_conf">OWT CONFERENCE</string>
+				<string name="server_url">server url</string>
+				<string name="connect">connect</string>
+				<string name="connecting">connecting</string>
+				<string name="disconnect">disconnect</string>
+				<string name="settings">settings</string>
+				<string name="publish">publish</string>
+				<string name="unpublish">Unpublish</string>
+				<string name="room_id">Room Id</string>
+				<string name="default_room">default room</string>
+				<string name="camera_facing">Camera Facing</string>
+				<string name="front">FRONT</string>
+				<string name="back">BACK</string>
+				<string name="camera_resolution">Camera Resolution</string>
+				<string name="pub_video_codec">Publish Video Codec</string>
+				<string name="sharescreen">ShareScreen</string>
+				<string name="share_screen">ShareScreen</string>
+				<string name="stop_screen">StopSharing</string>
+			</resources>
+        </config-file>
 
 
         <lib-file src="src/android/libs/owt_base.aar" target-dir="libs/owt_base.aar"/>
