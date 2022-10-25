@@ -13,16 +13,13 @@
         </config-file>
 		
 		<config-file parent="/*" target="res/values/colors.xml">
-            <resources>
 				<color name="colorPrimary">#3f51b5</color>
 				<color name="colorPrimaryDark">#303F9F</color>
 				<color name="colorAccent">#ff4081</color>
 				<color name="black_overlay">#66000000</color>
-			</resources>
         </config-file>
 		
 		<config-file parent="/*" target="res/values/strings.xml">
-            <resources>
 				<string name="owt_conf">OWT CONFERENCE</string>
 				<string name="server_url">server url</string>
 				<string name="connect">connect</string>
@@ -41,7 +38,6 @@
 				<string name="sharescreen">ShareScreen</string>
 				<string name="share_screen">ShareScreen</string>
 				<string name="stop_screen">StopSharing</string>
-			</resources>
         </config-file>
 
 
