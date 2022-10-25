@@ -82,11 +82,14 @@
         </config-file>
 
         <!--        <source-file src="src/android/utils" target-dir="src/sample/utils"/>-->
-        <source-file src="src/android/res/values/styles.xml" target-dir="res/values"/>
-        <source-file src="src/android/res/values/attrs.xml" target-dir="res/values"/>
-        <!-- <source-file src="src/android/res/values/colors.xml" target-dir="res/values"/> -->
-		 <resource-file src="src/android/res/values/colors.xml" target="res/values/colors.xml"/> -->
+		<!-- <source-file src="src/android/res/values/colors.xml" target-dir="res/values"/> -->
+		<resource-file src="src/android/res/values/colors.xml" target="res/values/colors.xml"/> 
+        <!--<source-file src="src/android/res/values/styles.xml" target-dir="res/values"/>-->
+		<resource-file src="src/android/res/values/styles.xml" target="res/values/styles.xml"/> 
+        <!--<source-file src="src/android/res/values/attrs.xml" target-dir="res/values"/>-->
+		 <resource-file src="src/android/res/values/attrs.xml" target="res/values/attrs.xml"/> 
         <!--<source-file src="src/android/res/values/strings.xml" target-dir="res/values"/> -->
+		<resource-file src="src/android/res/values/strings.xml" target="res/values/strings.xml"/> 
 
         <source-file src="src/android/utils/OwtFileVideoCapturer.java" target-dir="src/owt/sample/utils"/>
         <source-file src="src/android/utils/OwtScreenCapturer.java" target-dir="src/owt/sample/utils"/>
