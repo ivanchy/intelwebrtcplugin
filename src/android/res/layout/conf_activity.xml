@@ -12,12 +12,20 @@
             android:orientation="vertical">
         </LinearLayout>
 
-        <LinearLayout
+        <!--<LinearLayout
             android:id="@+id/bottom_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center_horizontal"
             android:background="@color/colorPrimary"
+            android:orientation="horizontal">-->
+			
+			<LinearLayout
+            android:id="@+id/bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="#3f51b5"
             android:orientation="horizontal">
 
             <Button

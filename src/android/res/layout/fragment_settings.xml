@@ -14,7 +14,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <TextView
+            <!--<TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
@@ -24,6 +24,19 @@
                 android:gravity="right"
                 android:text="@string/room_id"
                 android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold"/>-->
+				
+				<TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/room_id"
+                android:textColor="#3f51b5"
                 android:textSize="20sp"
                 android:textStyle="bold"/>
 
@@ -45,7 +58,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <TextView
+            <!--<TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -55,6 +68,19 @@
                 android:gravity="right"
                 android:text="@string/camera_facing"
                 android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold"/>-->
+				
+				<TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/camera_facing"
+                android:textColor="#3f51b5"
                 android:textSize="20sp"
                 android:textStyle="bold"/>
 
@@ -90,7 +116,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <TextView
+            <!--<TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -100,6 +126,19 @@
                 android:gravity="right"
                 android:text="@string/camera_resolution"
                 android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold"/>-->
+				
+			<TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/camera_resolution"
+                android:textColor="#3f51b5"
                 android:textSize="20sp"
                 android:textStyle="bold"/>
 
@@ -135,7 +174,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <TextView
+            <!--<TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -145,6 +184,19 @@
                 android:gravity="right"
                 android:text="@string/pub_video_codec"
                 android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold"/>-->
+				
+			<TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/pub_video_codec"
+                android:textColor="#3f51b5"
                 android:textSize="20sp"
                 android:textStyle="bold"/>
 

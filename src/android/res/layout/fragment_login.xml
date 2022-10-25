@@ -9,7 +9,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
+        <!--<TextView
             android:id="@+id/fullscreen_content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -17,6 +17,17 @@
             android:gravity="center"
             android:text="@string/owt_conf"
             android:textColor="@color/colorPrimary"
+            android:textSize="50sp"
+            android:textStyle="bold"/>-->
+			
+			<TextView
+            android:id="@+id/fullscreen_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="@string/owt_conf"
+            android:textColor="#3f51b5"
             android:textSize="50sp"
             android:textStyle="bold"/>
 

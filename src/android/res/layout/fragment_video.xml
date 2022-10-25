@@ -16,7 +16,7 @@
             android:elevation="1dp"
             android:orientation="vertical">
 
-            <TextView
+            <!--<TextView
                 android:id="@+id/stats_in"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -34,7 +34,27 @@
                 android:layout_weight="1"
                 android:background="@color/black_overlay"
                 android:gravity="top"
-                android:textColor="@color/colorPrimary"/>
+                android:textColor="@color/colorPrimary"/>-->
+				
+				<TextView
+                android:id="@+id/stats_in"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_weight="1"
+                android:background="#66000000"
+                android:gravity="top"
+                android:textColor="#3f51b5"/>
+
+            <TextView
+                android:id="@+id/stats_out"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_weight="1"
+                android:background="#66000000"
+                android:gravity="top"
+                android:textColor="#3f51b5"/>
 
         </LinearLayout>
 
