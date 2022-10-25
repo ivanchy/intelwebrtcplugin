@@ -62,7 +62,7 @@
         <!--        <source-file src="src/android/utils" target-dir="src/sample/utils"/>-->
         <source-file src="src/android/res/values/styles.xml" target-dir="res/values"/>
         <source-file src="src/android/res/values/attrs.xml" target-dir="res/values"/>
-        <source-file src="src/android/res/values/colors.xml" target-dir="res/values"/>
+        <!-- <source-file src="src/android/res/values/colors.xml" target-dir="res/values"/> -->
         <source-file src="src/android/res/values/strings.xml" target-dir="res/values"/>
 
         <source-file src="src/android/utils/OwtFileVideoCapturer.java" target-dir="src/owt/sample/utils"/>
