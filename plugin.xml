@@ -5,6 +5,9 @@
         <clobbers target="intelwebrtcplugin" />
     </js-module>
     <name>intelwebrtcplugin</name>
+	
+	<hook type="before_plugin_install" src="src/android/before_plugin_install.js" />
+	
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="intelwebrtcplugin">
@@ -83,7 +86,7 @@
 
         <!--        <source-file src="src/android/utils" target-dir="src/sample/utils"/>-->
 		<!-- <source-file src="src/android/res/values/colors.xml" target-dir="res/values"/> -->
-		<resource-file src="src/android/res/values/colors.xml" target="res/values/colors.xml"/> 
+		<!-- <resource-file src="src/android/res/values/colors.xml" target="res/values/colors.xml"/>--> 
         <!--<source-file src="src/android/res/values/styles.xml" target-dir="res/values"/>-->
 		<resource-file src="src/android/res/values/styles.xml" target="res/values/styles.xml"/> 
         <!--<source-file src="src/android/res/values/attrs.xml" target-dir="res/values"/>-->
