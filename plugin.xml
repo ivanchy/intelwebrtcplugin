@@ -12,12 +12,6 @@
             </feature>
         </config-file>
 		
-		<config-file parent="/*" target="res/values/colors.xml">
-				<color name="colorPrimary">#3f51b5</color>
-				<color name="colorPrimaryDark">#303F9F</color>
-				<color name="colorAccent">#ff4081</color>
-				<color name="black_overlay">#66000000</color>
-        </config-file>
 		
 		<config-file parent="/*" target="res/values/strings.xml">
 				<string name="owt_conf">OWT CONFERENCE</string>
@@ -91,6 +85,7 @@
         <source-file src="src/android/res/values/styles.xml" target-dir="res/values"/>
         <source-file src="src/android/res/values/attrs.xml" target-dir="res/values"/>
         <!-- <source-file src="src/android/res/values/colors.xml" target-dir="res/values"/> -->
+		 <resource-file src="src/android/res/values/colors.xml" target="res/values/colors.xml"/> -->
         <!--<source-file src="src/android/res/values/strings.xml" target-dir="res/values"/> -->
 
         <source-file src="src/android/utils/OwtFileVideoCapturer.java" target-dir="src/owt/sample/utils"/>
